@@ -1,99 +1,22 @@
-🩺 MyDoc – Full Stack Doctor Appointment Platform
+🩺MyDoc – Full Stack Healthcare Appointment System
 
-MyDoc is a full-stack healthcare appointment booking system that allows patients to book doctor consultations online, while providing doctors and administrators with powerful management tools.
+MyDoc is a production-ready full-stack healthcare platform built using the MERN stack, designed to streamline doctor appointment scheduling with dedicated patient, doctor, and admin interfaces.
 
-The platform is built using modern web technologies and follows a scalable client-server architecture.
+The system implements RESTful API architecture with JWT-based authentication, role-based access control, Razorpay payment integration, and Cloudinary-powered media handling. The frontend (React + Vite) and admin panel are deployed on Vercel, while the Express.js backend is hosted on Render with MongoDB Atlas ensuring scalable cloud data management.
 
-🚀 Features
-👤 User (Patient)
 
-Register & Login securely
-
-Browse available doctors
-
-Book appointments
-
-Online payment integration (Razorpay)
-
-View booking history
-
-🩺 Doctor
-
-Manage appointments
-
-Update availability
-
-View patient details
-
-🛠 Admin Panel
-
-Add / Remove doctors
-
-Manage users
-
-Monitor appointments
-
-Secure admin authentication
-
-🏗 Tech Stack
-Frontend
-
-React (Vite)
-
-Tailwind CSS
-
-Axios
-
-Deployed on Vercel
-
-Backend
-
-Node.js
-
-Express.js
-
-MongoDB Atlas
-
-Cloudinary (Image Upload)
-
-Razorpay (Payment Gateway)
-
-JWT Authentication
-
-Deployed on Render
-
-🌐 Architecture
-
-MyDoc follows a REST API-based architecture:
-
-Frontend & Admin → Hosted on Vercel
-
-Backend API → Hosted on Render
-
-Database → MongoDB Atlas
-
-Media Storage → Cloudinary
-
-🔐 Security
-
-JWT-based authentication
-
-Protected admin routes
-
-Environment variable configuration
-
-CORS-enabled API protection
-
-📌 Project Purpose
-
-This project demonstrates:
-
-Full-stack MERN architecture
-
-Secure authentication & authorization
-
-Payment gateway integration
-
-Real-world deployment workflow
-
-Production-ready environment configuration
+# Frontend-
+## Link-
+~~~
+ https://my-doc-admin.vercel.app
+~~~
+# Backend-
+## Link-
+~~~
+ https://mydoc-ozro.onrender.com
+~~~
+# Admin-
+## Link-
+~~~
+ https://my-doc-admin.vercel.app
+~~~
