@@ -1,4 +1,4 @@
-🩺MyDoc – Full Stack Healthcare Appointment System
+# 🩺MyDoc – Full Stack Healthcare Appointment System
 
 MyDoc is a production-ready full-stack healthcare platform built using the MERN stack, designed to streamline doctor appointment scheduling with dedicated patient, doctor, and admin interfaces.
 
@@ -8,7 +8,7 @@ The system implements RESTful API architecture with JWT-based authentication, ro
 # Frontend-
 ## Link-
 ~~~
- https://my-doc-admin.vercel.app
+ https://my-doc-tau.vercel.app
 ~~~
 # Backend-
 ## Link-
