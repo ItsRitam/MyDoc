@@ -1,0 +1,136 @@
+import React, { useContext } from "react"
+import { AdminContext } from "../context/AdminContext"
+import { NavLink } from "react-router-dom"
+import { assets } from "../assets/assets"
+import { DoctorContext } from "../context/DoctorContext"
+
+const Sidebar = () => {
+  const { aToken } = useContext(AdminContext)
+  const { dToken } = useContext(DoctorContext)
+
+  const navItemStyle =
+    "flex items-center gap-3 px-4 py-3 rounded-lg w-full transition-all duration-300"
+
+  return (
+    <div className="flex min-h-screen w-55 bg-gradient-to-b from-indigo-600 via-purple-600 to-pink-500 p-5">
+      {aToken && (
+        <ul className="flex flex-col gap-3 w-full">
+          <NavLink
+            to={"/admin-dashboard"}
+            className={({ isActive }) =>
+              `${navItemStyle} ${
+                isActive
+                  ? "bg-white text-indigo-600 font-semibold"
+                  : "text-white hover:bg-white hover:text-indigo-600"
+              }`
+            }
+          >
+            <img src={assets.home_icon} alt="Dashboard" className="w-5" />
+            <p className="hidden md:block">Dashboard</p>
+          </NavLink>
+
+          <NavLink
+            to={"/all-appointments"}
+            className={({ isActive }) =>
+              `${navItemStyle} ${
+                isActive
+                  ? "bg-white text-indigo-600 font-semibold"
+                  : "text-white hover:bg-white hover:text-indigo-600"
+              }`
+            }
+          >
+            <img
+              src={assets.appointment_icon}
+              alt="Appointments"
+              className="w-5"
+            />
+            <p className="hidden md:block">Appointments</p>
+          </NavLink>
+
+          <NavLink
+            to={"/add-doctor"}
+            className={({ isActive }) =>
+              `${navItemStyle} ${
+                isActive
+                  ? "bg-white text-indigo-600 font-semibold"
+                  : "text-white hover:bg-white hover:text-indigo-600"
+              }`
+            }
+          >
+            <img src={assets.add_icon} alt="Add Doctor" className="w-5" />
+            <p className="hidden md:block">Add Doctor</p>
+          </NavLink>
+
+          <NavLink
+            to={"/doctor-list"}
+            className={({ isActive }) =>
+              `${navItemStyle} ${
+                isActive
+                  ? "bg-white text-indigo-600 font-semibold"
+                  : "text-white hover:bg-white hover:text-indigo-600"
+              }`
+            }
+          >
+            <img src={assets.people_icon} alt="Doctors List" className="w-5" />
+            <p className="hidden md:block">Doctors List</p>
+          </NavLink>
+        </ul>
+      )}
+
+
+
+
+
+      {dToken && (
+        <ul className="flex flex-col gap-3 w-full">
+          <NavLink
+            to={"/doctor-dashboard"}
+            className={({ isActive }) =>
+              `${navItemStyle} ${
+                isActive
+                  ? "bg-white text-indigo-600 font-semibold"
+                  : "text-white hover:bg-white hover:text-indigo-600"
+              }`
+            }
+          >
+            <img src={assets.home_icon} alt="Dashboard" className="w-5" />
+            <p className="hidden md:block">Dashboard</p>
+          </NavLink>
+
+          <NavLink
+            to={"/doctor-appointments"}
+            className={({ isActive }) =>
+              `${navItemStyle} ${
+                isActive
+                  ? "bg-white text-indigo-600 font-semibold"
+                  : "text-white hover:bg-white hover:text-indigo-600"
+              }`
+            }
+          >
+            <img
+              src={assets.appointment_icon}
+              alt="Appointments"
+              className="w-5"
+            />
+            <p className="hidden md:block">Appointments</p>
+          </NavLink> 
+
+          <NavLink
+            to={"/doctor-profile"}
+            className={({ isActive }) =>
+              `${navItemStyle} ${
+                isActive
+                  ? "bg-white text-indigo-600 font-semibold"
+                  : "text-white hover:bg-white hover:text-indigo-600"
+              }`
+            }
+          >
+            <img src={assets.people_icon} alt="Doctors List" className="w-5" />
+            <p className="hidden md:block">Profile</p>
+          </NavLink>
+        </ul>
+      )}
+    </div>
+  )
+}
+export default Sidebar
