@@ -18,8 +18,8 @@ app.use(express.json());
 app.use(
   cors({
     origin: [
-      "https://my-doc-tau.vercel.app/",
-      "https://my-doc-admin.vercel.app/",
+      "https://my-doc-tau.vercel.app",
+      "https://my-doc-admin.vercel.app",
     ],
     credentials: true,
   }),
